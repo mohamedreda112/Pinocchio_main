@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinocchio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="IMGS/pinocchio.png">
+</head>
+<body>
+  <div class="landing">
+    <div class="stikyHeader">
+      <nav>
+        <p class="logo">Pinocchio</p>
+        <div class="navlinks">
+          <ul class="mainlinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#shop">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="left">
+          <div class="shopicon">
+            <i class="cart fa-solid fa-cart-shopping"></i>
+            <span class="quantity">0</span>
+          </div>
+          <div class="btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="wrapper">
+      <div class="child-1" style="background-image: url(IMGS/land-1.jpg);">
+        <div class="text">
+          <h1>Furniture That <br> Everyone <br> Loves</h1>
+          <a href="#shop">Shop Now</a>
+        </div>
+      </div>
+      <div class="child-2" style="background-image: url(IMGS/land-22.jpg);"></div>
+      <div class="child-3" style="background-image: url(IMGS/land-3.jpg);"></div>
+      <div class="child-4" style="background-image: url(IMGS/land-4.jpg);"></div>
+      <div class="child-5" style="background-image: url(IMGS/land-5.jpg);"></div>
+    </div>
+  </div>
+
+  <!-- Start Shop -->
+  <div class="shop">
+    <div class="container">
+      <div class="header">
+        <h3>Our Shop</h3>
+        <h5>Welcome To The World Of Wood</h5>
+      </div>
+      <div class="wrapper">
+        <div class="btns">
+          <button class="button-value" onclick="filterProduct('All')" class="active">All</button>
+          <button class="button-value" onclick="filterProduct('Bed')">Bed</button>
+          <button class="button-value" onclick="filterProduct('Nightstand')">NightStand</button>
+          <button class="button-value" onclick="filterProduct('Chair')">Chair</button>
+          <button class="button-value" onclick="filterProduct('Sofa')">Sofa</button>
+        </div>
+        <div class="cards"></div>
+      </div>
+      <div class="newCart">
+        <div class="newlist"></div>
+        <div class="check">
+          <div class="total">$0</div>
+          <div class="text">Total Price</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Shop -->
+
+  <!-- Start Services -->
+  <div class="services">
+    <div class="container">
+      <div class="header">
+        <h3>Our Services</h3>
+        <h5>Why Should You Choose US?</h5>
+      </div>
+      <div class="wrapper">
+        <div class="card">
+          <h3>Sale</h3>
+          <p>We sell the latest modern home furniture to enhance the beauty of your home.</p>
+        </div>
+        <div class="card">
+          <h3>Buy</h3>
+          <p>We buy used furniture from you, restore it and make it look new.</p>
+        </div>
+        <div class="card">
+          <h3>Free Deliver</h3>
+          <p>We deliver your order as quickly as possible for free, anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services -->
+
+  <!-- Start About -->
+  <div class="about">
+    <div class="header">
+      <h3>About Us</h3>
+      <h5>Who Are We?</h5>
+    </div>
+    <p>We are the Pinocchio Wood and Home Furniture Company, experts in the world of furniture since 2010. We have
+      a team of carpenters who are experts in the furniture industry around the world. Our goal is to make your
+      home more beautiful and elegant. Just come to us and choose your home furniture from Pinocchio.</p>
+      <div class="wrapper">
+        <video src="IMGS/about.mp4" autoplay muted loop></video>
+        <div class="text">
+          <h4>super Video And Informations about us here</h4>
+          <ul class="social">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <!-- End About -->
+
+  <!-- Start Contact -->
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="header">
+        <h3>Contact Us</h3>
+        <h5>We Are Happy To Contact You</h5>
+      </div>
+      <div class="wrapper">
+        <ul class="social">
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="form">
+          <form action="">
+            <input type="text" placeholder="Name">
+            <input type="tel" placeholder="Phone">
+            <textarea placeholder="Message"></textarea>
+            <button value="submit">Send</button>
+          </form>
+        </div>
+        <div class="image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact -->
+  <footer>
+    <h2>Pinocchio</h2>
+    <div class="me">
+      <p>&copy; <span id="year"></span> PINOCCHIO, All Rights Reserved</p>
+      <p>Created With All Love By <span>Mohamed Reda</span></p>
+    </div>
+  </footer>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
